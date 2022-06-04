@@ -4,7 +4,7 @@
  <h2> <a href="https://prakash-portfolio.vercel.app/"> Click here For Portfolio </a>  </h2>
  <br/>
  
- <img src="./prakash-portfolio.png" alt="demo" width="50vw" />
+ <img src="./prakash-portfolio.png" alt="demo" width="100vw" />
 
 
 # Getting Started with Create React App
