@@ -1,10 +1,10 @@
 
-import img from "./prakash-portfolio.png"
+
 # Deployed link of Portfolio 
  <h2> <a href="https://prakash-portfolio.vercel.app/"> Click here For Portfolio </a>  </h2>
  <br/>
  
- <img src="./prakash-portfolio.png" alt="demo" />
+ <img src="./prakash-portfolio.png" alt="demo" width="50vw" />
 
 
 # Getting Started with Create React App
