@@ -30,18 +30,23 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              I'm a self-taught web developer and Mobile App Developer with
-              experience in designing new features from ideation to production,
-              implementation of wireframes and design flows into high
-              performance software applications. I take into consideration the
-              user experience while writing reusable and efficient code. I
-              passionately combine good design, technology, and innovation in
-              all my projects, which I like to accompany from the first idea to
-              release.Currently, I'm focused on the backend development.
+              I'm a Full Stack web developer (MERN) with experience in designing
+              new features from ideation to production, implementation of
+              wireframes and design flows into high performance software
+              applications. I fell in love with programming and I have at least
+              learnt something, I think… 🤷‍♂️ I am fluent in classics like
+              HTML,CSS, Javascript and REACT. My field of Interest's are
+              building new Web Technologies and Products and also in areas
+              related to Deep Learning and Natural Launguage Processing.
+              {/*I take
+              into consideration the user experience while writing reusable and
+              efficient code. I passionately combine good design, technology,
+              and innovation in all my projects, which I like to accompany from
+              the first idea to release.Currently, I'm focused on the backend 
+              development.*/}
             </p>
           </motion.div>
-          <motion.div
-          >
+          <motion.div>
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
               Technologies and Tools
             </h4>
