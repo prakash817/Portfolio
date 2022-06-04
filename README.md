@@ -4,7 +4,7 @@ import img from "./prakash-portfolio.png"
  <h2> <a href="https://prakash-portfolio.vercel.app/"> Click here For Portfolio </a>  </h2>
  <br/>
  
- <img src=img alt="demo" />
+ <img src="./prakash-portfolio.png" alt="demo" />
 
 
 # Getting Started with Create React App
