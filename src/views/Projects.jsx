@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Card from "../components/Card";
 import { ThemeContext } from "../themeProvider";
+import { project } from "../constants.js";
 
 const Projects = () => {
   const theme = useContext(ThemeContext);
@@ -19,19 +20,19 @@ const Projects = () => {
           What I Built
         </h4>
         <div className="mt-8 flex justify-between items-stretch flex-wrap">
-          <Card />
-          <Card />
-          <Card />
+          {project.map((el) => (
+            <Card key={el.id} el={el} />
+          ))}
         </div>
 
         <a
           href="https://github.com/prakash817?tab=repositories"
-          class=" w-32 flex items-center py-4 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-auto mt-4"
+          className=" w-32 flex items-center py-4 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mx-auto mt-4"
           target="_blank"
         >
           More Project
           {/* <svg
-            class="ml-2 -mr-1 w-4 h-4"
+            className="ml-2 -mr-1 w-4 h-4"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"

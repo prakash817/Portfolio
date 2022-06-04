@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import heroBg from "../assets/webdev.svg";
+import heroBg from "../assets/webdev.png";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
@@ -31,6 +31,7 @@ const Home = () => {
               >
                 Hi, I am Prakash Gupta
               </motion.span>
+
               <span className="block text-blue-500 z-0 lg:inline">
                 <Typical
                   steps={[
@@ -58,8 +59,10 @@ const Home = () => {
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
                 <a
+                  key={el.id}
                   href={el.link}
                   className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                  target="_blank"
                 >
                   <img alt="" src={el.url} />
                   {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
@@ -67,11 +70,16 @@ const Home = () => {
               ))}
             </div>
 
+            {/* adding Resume */}
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <Link className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                <a
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+                  href="https://drive.google.com/file/d/1kZhI1Bdii1ohumyNJY7M_6C4h3DOdkRv/view?usp=sharing"
+                  target="_blank"
+                >
                   Resume
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -89,8 +97,8 @@ const Home = () => {
               hidden: { opacity: 1, y: 80 },
             }}
             src={heroBg}
-            alt=""
-            className="md:w-3/6 hidden sm:block"
+            alt="avatar"
+            className="md:w-2/6 hidden sm:block"
           />
         </main>
       </div>
