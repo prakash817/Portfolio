@@ -19,7 +19,8 @@ const Projects = () => {
         <h4 className="mt-16 text-3xl font-semibold text-blue-600">
           What I Built
         </h4>
-        <div className="mt-8 flex justify-between items-stretch flex-wrap">
+        {/* mapping project */}
+        <div className="mt-4 flex justify-between items-stretch flex-wrap">
           {project.map((el) => (
             <Card key={el.id} el={el} />
           ))}
