@@ -162,7 +162,7 @@ export const project = [
     imgUrl:
       "https://seeklogo.com/images/N/netmeds-logo-4A3580CB35-seeklogo.com.png",
     gitLink: "https://github.com/prakash817/netmedspharmencyclone",
-    deployGitLink: "",
+    deployGitLink: "https://bright-truffle-7e73b1.netlify.app",
   },
   {
     id: 3,
