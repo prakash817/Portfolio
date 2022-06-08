@@ -13,6 +13,7 @@ const Card = (props) => {
         hidden: { opacity: 0 },
       }}
       class="max-w-xl bg-white rounded-lg border border-gray-200 shadow-lg dark:bg-gray-800 dark:border-gray-700 my-8"
+style={{ width: "300px" }}
     >
       <a href={`${el.deployGitLink}`} target="_blank">
         <img
