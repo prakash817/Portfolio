@@ -149,7 +149,7 @@ export const project = [
   {
     id: 1,
     name: "Meesho Clone",
-    desc: "meesho is an e-commerce website it provides a large variety of products. A collaborative project built by 6 member team in 5 days. tech used are HTML ,CSS and JavaScript .",
+    desc: "meesho is an e-commerce website it provides a large variety of products. A collaborative project built by 6 member team in 5 days. tech used are HTML ,CSS and JavaScript.we have used netlify for deployment",
     imgUrl:
       "https://upload.wikimedia.org/wikipedia/commons/8/80/Meesho_Logo_Full.png",
     gitLink: "https://github.com/prakash817/meesho",
