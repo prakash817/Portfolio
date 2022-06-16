@@ -20,7 +20,7 @@ const Projects = () => {
           What I Built
         </h4>
         {/* mapping project */}
-        <div className="mt-4 flex justify-between items-stretch flex-wrap pt-10">
+        <div className="mt-4 flex justify-between items-stretch flex-wrap">
           {project.map((el) => (
             <Card key={el.id} el={el} />
           ))}
