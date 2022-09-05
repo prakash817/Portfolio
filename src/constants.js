@@ -115,7 +115,7 @@ export const project = [
   {
     id: 2,
     name: "Meesho Clone",
-    desc: "meesho is an e-commerce website it provides a large variety of products. A collaborative project built by 6 member team in 5 days. tech used are HTML ,CSS and JavaScript.we have used netlify for deployment",
+    desc: "Meesho is an online e-commerce website it provides a large variety of products. A collaborative project built by 6 member team in 5 days. tech used are HTML ,CSS and JavaScript.we have used netlify for deployment",
     imgUrl:
       "https://upload.wikimedia.org/wikipedia/commons/8/80/Meesho_Logo_Full.png",
     gitLink: "https://github.com/prakash817/meesho",
@@ -124,7 +124,7 @@ export const project = [
   {
     id: 3,
     name: "Netmeds Clone",
-    desc: " netmeds is a one of India's most trusted pharmacies. it is a collaborative project built by 5 member team. tech used are   HTML ,CSS and JavaScript. we have used netlify for deployment",
+    desc: "Netmeds is a one of India's most trusted online pharmacy website . it is a collaborative project built by 5 member team. tech used are HTML ,CSS and JavaScript. we have used netlify for deployment",
     imgUrl:
       "https://seeklogo.com/images/N/netmeds-logo-4A3580CB35-seeklogo.com.png",
     gitLink: "https://github.com/prakash817/netmedspharmencyclone",
