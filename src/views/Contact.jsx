@@ -12,6 +12,7 @@ const Contact = () => {
         darkMode
           ? "bg-gray pt-24 md:h-screen"
           : "bg-black pt-24 text-white md:h-screen"
+    style:{{height:"100%"}}
       }
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
