@@ -30,20 +30,7 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              I'm a Full Stack web developer (MERN) with experience in designing
-              new features from ideation to production, implementation of
-              wireframes and design flows into high performance software
-              applications. I fell in love with programming and I have at least
-              learnt something, I think… 🤷‍♂️ I am fluent in classics like
-              HTML,CSS, Javascript and REACT. My field of Interest's are
-              building new Web Technologies and Products and also in areas
-              related to Deep Learning and Natural Launguage Processing.
-              {/*I take
-              into consideration the user experience while writing reusable and
-              efficient code. I passionately combine good design, technology,
-              and innovation in all my projects, which I like to accompany from
-              the first idea to release.Currently, I'm focused on the backend 
-              development.*/}
+              Data structures and algorithms enthusiast, Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.
             </p>
           </motion.div>
           <motion.div>
