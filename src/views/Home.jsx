@@ -72,7 +72,7 @@ const Home = () => {
             </div>
 
             {/* adding Resume */}
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start " style={{flexDirection:"column",marginTop:"5px"}}>
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start " style={{flexDirection:"column"}}>
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
@@ -83,7 +83,7 @@ const Home = () => {
                   View Resume
                 </a>
               </div>
-                <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
+                <div className="mt-3 sm:mt-4 lg:mt-10 cursor-pointer w-1/2">
                 <a
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   href="Prakash gupta_FW16_049 updated.pdf"
