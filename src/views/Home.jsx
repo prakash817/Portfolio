@@ -43,6 +43,7 @@ const Home = () => {
                     1000,
                   ]}
                   loop={Infinity}
+                  wrapper="p"
                 />
               </span>
             </h1>
@@ -77,6 +78,7 @@ const Home = () => {
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   href="https://drive.google.com/file/d/1kZhI1Bdii1ohumyNJY7M_6C4h3DOdkRv/view?usp=sharing"
                   target="_blank"
+                  download
                 >
                   Resume
                 </a>
