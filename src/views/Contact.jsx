@@ -10,7 +10,7 @@ const Contact = () => {
       id="contact"
       className={
         darkMode
-          ? "bg-gray-100 pt-24 md:h-screen"
+          ? "bg-gray pt-24 md:h-screen"
           : "bg-black pt-24 text-white md:h-screen"
       }
     >
