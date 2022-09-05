@@ -31,7 +31,8 @@ const About = () => {
               }
             >
               Data structures and algorithms enthusiast, Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.
-            </p>
+            I am fluent in classics like HTML,CSS, Javascript and REACT and MERN stack. My field of Interest's are building new Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing.
+                </p>
           </motion.div>
           <motion.div>
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
