@@ -110,7 +110,7 @@ const Home = () => {
             }}
             src={heroBg}
             alt="avatar"
-            className="md:w-2/8 hidden sm:block"
+            className="md:w-2/4 hidden sm:block"
           />
         </main>
       </div>
