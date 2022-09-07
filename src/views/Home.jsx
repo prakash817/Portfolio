@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import heroBg from "../assets/webdev.png";
+import heroBg from "../assets/myPicLatest.JPG";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
