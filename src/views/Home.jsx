@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import heroBg from "../assets/myPicLatest.JPG";
+import heroBg from "../assets/prakash.png";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
@@ -110,7 +110,7 @@ const Home = () => {
             }}
             src={heroBg}
             alt="avatar"
-            className="md:w-2/6 hidden sm:block"
+            className="md:w-2/8 hidden sm:block"
           />
         </main>
       </div>
