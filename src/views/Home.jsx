@@ -111,7 +111,7 @@ const Home = () => {
             src={heroBg}
             alt="avatar"
             className="md:w-2/4 hidden sm:block"
-            style={{borderRadius:"5px"}}
+            
           />
         </main>
       </div>
