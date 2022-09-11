@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/prakash.png";
-import pdf from "../assets/Prakash_gupta_FW16_049.pdf";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
@@ -77,7 +76,7 @@ const Home = () => {
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                  href="https://drive.google.com/file/d/1kZhI1Bdii1ohumyNJY7M_6C4h3DOdkRv/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1sOSYYoCwxRxujFiBtHfV3k0WQqzweObS/view?usp=sharing"
                   target="_blank"
                   
                 >
@@ -87,25 +86,15 @@ const Home = () => {
                 <div className="mt-3 sm:mt-4 lg:mt-10 cursor-pointer w-1/2">
                 <a
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                  href="Prakash_gupta_FW16_049.pdf"
+                  href="Prakash gupta_FW16_049.pdf"
                   
                   download
                 >
                   Download Resume
                 </a>
               </div>
-            {/* extra */}
-               <div className="mt-3 sm:mt-4 lg:mt-10 cursor-pointer w-1/2">
-                <a
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                  href={pdf} 
-                  target="_blank"
-                    rel="noreferrer"
-                
-                >
-                  Download Resume
-                </a>
-              </div>
+           
+              
             </div>
           </div>
           <motion.img
