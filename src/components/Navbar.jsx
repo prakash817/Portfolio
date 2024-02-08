@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { ThemeContext } from "../themeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
+import { downloadResume, openResumeInNewTab } from "../views/Home";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -84,19 +85,21 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
+              <button onClick={openResumeInNewTab}>
+                <button onClick={downloadResume}>Resume</button>
+              </button>
             </ul>
             <div onClick={() => toggleTheme()}>
               {darkMode ? (
                 <img
                   src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
-
                   className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
                   alt=""
                 />
               ) : (
                 <img
-                src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"  
-                className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
+                  src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"
+                  className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
                   alt=""
                 />
               )}

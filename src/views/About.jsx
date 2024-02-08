@@ -30,13 +30,16 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              Data structures and algorithms enthusiast, Quick learner and an aspiring full-stack web developer with core knowledge of MERN stack technology. Looking forward to applying and enhancing my skills and knowledge as a developer.
-            I am fluent in classics like HTML,CSS, Javascript and MERN stack. My field of Interest's are building new Web Technologies and Products and also in areas related to Deep Learning .
-                </p>
+              Experienced full-stack web developer proficient in JavaScript and
+              the MERN stack. Skilled in creating scalable and efficient web
+              applications with seamless integration between frontend and
+              backend components. Seeking a dynamic role in a forward-thinking
+              company.
+            </p>
           </motion.div>
           <motion.div>
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
-              Technologies and Tools
+              TechStack And ToolStack
             </h4>
             <p
               className={

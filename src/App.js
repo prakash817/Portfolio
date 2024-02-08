@@ -16,19 +16,17 @@ function App() {
 
   return (
     <ThemeProvider>
-      <>
-        {!loading ? (
-          <div>
-            <Navbar />
-            <Home />
-            <About />
-            <Projects />
-            <Contact />
-          </div>
-        ) : (
-          <LoadingScreen />
-        )}
-      </>
+      {!loading ? (
+        <div>
+          <Navbar />
+          <Home />
+          <About />
+          <Projects />
+          <Contact />
+        </div>
+      ) : (
+        <LoadingScreen />
+      )}
     </ThemeProvider>
   );
 }

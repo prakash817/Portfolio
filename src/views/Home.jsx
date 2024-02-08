@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/prakash.png";
-import pdf from "../assets/Prakash_gupta_FW16_049.pdf.pdf";
+
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
@@ -9,9 +9,32 @@ import { Link } from "react-scroll";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
 
+export const openResumeInNewTab = () => {
+  window.open(
+    "https://drive.google.com/file/d/16PCSykd0AvzcxaZDvPt-a0orj8nQ7jYq/view?usp=sharing",
+    "_blank"
+  );
+};
+export const downloadResume = () => {
+  fetch(
+    "https://drive.google.com/file/d/16PCSykd0AvzcxaZDvPt-a0orj8nQ7jYq/view?usp=sharing"
+  )
+    .then((response) => response.blob())
+    .then((blob) => {
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "resume.pdf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    });
+};
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
   return (
     <>
       <div
@@ -26,6 +49,7 @@ const Home = () => {
           id="/"
         >
           <div className="sm:text-center lg:text-left">
+            {/* first haeding */}
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <motion.span
                 className={darkMode ? "block text-black" : " text-white"}
@@ -48,7 +72,8 @@ const Home = () => {
                 />
               </span>
             </h1>
-            {/* <p
+            {/* second haeding */}
+            <p
               className={
                 darkMode
                   ? "mt-3 text-base text-black sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
@@ -56,8 +81,9 @@ const Home = () => {
               }
             >
               I am a Front-End / Full-Stack Developer. I am currently working at
-              CloudStok Technologies as a Front-End Developer
-            </p> */}
+              Next.js Framework as a Front-End Developer
+            </p>
+            {/* home contact */}
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
                 <a
@@ -67,36 +93,44 @@ const Home = () => {
                   target="_blank"
                 >
                   <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                  <p className="text-md mt-2 hover:hidden">{el.name}</p>
                 </a>
               ))}
             </div>
 
             {/* adding Resume */}
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start " style={{flexDirection:"column"}}>
+            {/* <div
+              className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start "
+              style={{ flexDirection: "column" }}
+            >
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   href="https://drive.google.com/file/d/1sOSYYoCwxRxujFiBtHfV3k0WQqzweObS/view?usp=sharing"
                   target="_blank"
-                  
                 >
                   View Resume
                 </a>
               </div>
-                <div className="mt-3 sm:mt-4 lg:mt-10 cursor-pointer w-1/2">
+              <div className="mt-3 sm:mt-4 lg:mt-10 cursor-pointer w-1/2">
                 <a
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   href={pdf}
-                  
                   download
                 >
                   Download Resume
                 </a>
               </div>
-           
-              
-            </div>
+            </div> */}
+            <button onClick={openResumeInNewTab}>
+              <button
+                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+                onClick={downloadResume}
+              >
+                Resume
+              </button>
+            </button>
+            {/* adding Resume ending line*/}
           </div>
           <motion.img
             initial="hidden"
@@ -114,7 +148,6 @@ const Home = () => {
             src={heroBg}
             alt="avatar"
             className="md:w-2/8 hidden sm:block"
-            
           />
         </main>
       </div>
