@@ -11,13 +11,13 @@ import cloudDark from "../assets/cloudDark.png";
 
 export const openResumeInNewTab = () => {
   window.open(
-    "https://drive.google.com/file/d/16PCSykd0AvzcxaZDvPt-a0orj8nQ7jYq/view?usp=sharing",
+    "https://drive.google.com/file/d/11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW/view?usp=sharing",
     "_blank"
   );
 };
 export const downloadResume = () => {
   fetch(
-    "https://drive.google.com/file/d/16PCSykd0AvzcxaZDvPt-a0orj8nQ7jYq/view?usp=sharing"
+    "https://drive.google.com/file/d/11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW/view?usp=sharing"
   )
     .then((response) => response.blob())
     .then((blob) => {
