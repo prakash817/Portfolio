@@ -85,8 +85,13 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <button onClick={openResumeInNewTab}>
-                <button onClick={downloadResume}>Resume</button>
+              <button
+                onClick={() => {
+                  downloadResume();
+                  openResumeInNewTab();
+                }}
+              >
+                <button>Resume</button>
               </button>
             </ul>
             <div onClick={() => toggleTheme()}>

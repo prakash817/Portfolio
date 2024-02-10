@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const Card = (props) => {
-  console.log(props, "project");
   const { el } = props;
   return (
     <motion.div

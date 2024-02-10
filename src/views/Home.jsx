@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/prakash.png";
+import cloud from "../assets/cloudBg.png";
+import cloudDark from "../assets/cloudDark.png";
+
+import resume from "../assets/resume.pdf";
 
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
-import cloud from "../assets/cloudBg.png";
-import cloudDark from "../assets/cloudDark.png";
 
 export const openResumeInNewTab = () => {
   window.open(
@@ -15,21 +16,28 @@ export const openResumeInNewTab = () => {
     "_blank"
   );
 };
+
 export const downloadResume = () => {
-  fetch(
-    "https://drive.google.com/file/d/11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW/view?usp=sharing"
-  )
-    .then((response) => response.blob())
-    .then((blob) => {
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "resume.pdf");
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-    });
+  // Use a direct link to the file for downloading
+  const fileUrl =
+    "https://drive.google.com/uc?export=download&id=11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW";
+  // Open the file in a new tab
+  const newTab = window.open(fileUrl, "_blank");
+
+  // After a short delay, initiate the download
+  setTimeout(() => {
+    newTab.location.href = fileUrl;
+  }, 100);
+
+  // Create a hidden anchor element
+  // const link = document.createElement("a");
+  // link.href = fileUrl;
+  // link.setAttribute("download", "resume.pdf");
+
+  // // Trigger the download by simulating a click event
+  // document.body.appendChild(link);
+  // link.click();
+  // document.body.removeChild(link);
 };
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -122,11 +130,14 @@ const Home = () => {
                 </a>
               </div>
             </div> */}
-            <button onClick={openResumeInNewTab}>
-              <button
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                onClick={downloadResume}
-              >
+
+            <button
+              onClick={() => {
+                downloadResume();
+                openResumeInNewTab();
+              }}
+            >
+              <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
                 Resume
               </button>
             </button>
