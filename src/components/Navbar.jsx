@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { ThemeContext } from "../themeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
-import { downloadResume, openResumeInNewTab } from "../views/Home";
+import { downloadResume } from "../views/Home";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -18,10 +18,10 @@ const Navbar = () => {
       name: "About",
       route: "about",
     },
-    // {
-    //   name: "Services",
-    //   route: "services",
-    // },
+    {
+      name: "Skill",
+      route: "skill",
+    },
     {
       name: "Projects",
       route: "projects",
@@ -88,7 +88,7 @@ const Navbar = () => {
               <button
                 onClick={() => {
                   downloadResume();
-                  openResumeInNewTab();
+                  // openResumeInNewTab();
                 }}
               >
                 <button>Resume</button>

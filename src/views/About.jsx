@@ -37,7 +37,7 @@ const About = () => {
               company.
             </p>
           </motion.div>
-          <motion.div>
+          <motion.div id="skill">
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
               TechStack And ToolStack
             </h4>

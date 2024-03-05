@@ -10,34 +10,23 @@ import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 
-export const openResumeInNewTab = () => {
-  window.open(
-    "https://drive.google.com/file/d/11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW/view?usp=sharing",
-    "_blank"
-  );
-};
-
 export const downloadResume = () => {
   // Use a direct link to the file for downloading
   const fileUrl =
-    "https://drive.google.com/uc?export=download&id=11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW";
+    "https://drive.google.com/uc?export=download&id=1iADGXBWdhIQ9iFkX4LPq7UgqGxDkRd3O";
+  // "https://drive.google.com/uc?export=download&id=11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW";
   // Open the file in a new tab
-  const newTab = window.open(fileUrl, "_blank");
+  // const newTab =
+  window.open(
+    "https://drive.google.com/file/d/1iADGXBWdhIQ9iFkX4LPq7UgqGxDkRd3O/view?usp=sharing",
+    // "https://drive.google.com/file/d/11nDJDTJh3iKfJCjpqrRy9EgQ-Sd9lxYW/view?usp=sharing",
+    "_blank"
+  );
 
   // After a short delay, initiate the download
   setTimeout(() => {
-    newTab.location.href = fileUrl;
+    window.location.href = fileUrl;
   }, 100);
-
-  // Create a hidden anchor element
-  // const link = document.createElement("a");
-  // link.href = fileUrl;
-  // link.setAttribute("download", "resume.pdf");
-
-  // // Trigger the download by simulating a click event
-  // document.body.appendChild(link);
-  // link.click();
-  // document.body.removeChild(link);
 };
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -107,34 +96,11 @@ const Home = () => {
             </div>
 
             {/* adding Resume */}
-            {/* <div
-              className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start "
-              style={{ flexDirection: "column" }}
-            >
-              <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <a
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                  href="https://drive.google.com/file/d/1sOSYYoCwxRxujFiBtHfV3k0WQqzweObS/view?usp=sharing"
-                  target="_blank"
-                >
-                  View Resume
-                </a>
-              </div>
-              <div className="mt-3 sm:mt-4 lg:mt-10 cursor-pointer w-1/2">
-                <a
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
-                  href={pdf}
-                  download
-                >
-                  Download Resume
-                </a>
-              </div>
-            </div> */}
 
             <button
               onClick={() => {
                 downloadResume();
-                openResumeInNewTab();
+                // openResumeInNewTab();
               }}
             >
               <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
